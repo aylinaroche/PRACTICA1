@@ -1,27 +1,27 @@
 package pack;
 import java.util.*;
-import java.math.*;
+//import java.math.*;
 
 public class Inciso8 {
 
-  //  public void clase8() {
-	public static void main(String[] args) {
+	public void clase8() {
+	//public static void main(String[] args) {
 		
-		Scanner s=new Scanner(System.in);
-       int n0,n1,al;
-       Random rnd = new Random(); //Inicio de la funcion que genera los numeros aleatorios usando math
+		Scanner s  =new Scanner(System.in);
+       int LimI, LimS,al;
+       Random rnd = new Random(); //Funcion que genera los numeros aleatorios usando math
        
        System.out.println("Ingrese el limite inferior del intervalo");
-       n0=s.nextInt();
+       LimI=s.nextInt();
        System.out.println("Ingrese el limite superior del intervalo");
-       n1=s.nextInt();
+       LimS=s.nextInt();
        
-       al=(int)Math.floor(Math.random()*(n0-n1+1)+n1); 
-       System.out.println("Su numero aleatorio es: "+String.valueOf(al));
+       al=(int)Math.floor(Math.random()*(LimI-LimS+1)+LimS); 
+       System.out.println("Su número aleatorio es: "+ String.valueOf(al));
        
        String numero;
        
-       int iUnidad = al%10;
+       int iUnidad = al%10; //50/5 = 10 *5*
        al = al/10;		
        numero = unidadEnTexto(iUnidad);
        
@@ -35,19 +35,16 @@ public class Inciso8 {
        else if (iDecena > 1)
        numero = decenaEnTexto(iDecena) + " y " + numero;
        
-       int iCentena = al%10;
- 
-       if ((iCentena!=1) && (iCentena!=5) && (iCentena!=9) && (iCentena!=0))
-       numero = unidadEnTexto(iCentena) + "cientos" + " " + numero;
-       else if ((iCentena==1) || (iCentena==5) || (iCentena==9))
-       numero = centenaEnTexto(iCentena) + " " + numero;
+   
+       System.out.println("El número en letras es:  "+numero);
+      
+       s.close();
+System.out.println("Su numero aleatorio es: "+String.valueOf(al));
        
-       System.out.println("El numero en letras es:  "+numero);
-       
-       
-    }
-    public static String unidadEnTexto(int iNumero){
-// Método que dado un número me lo devuelve en texto		
+     
+	}
+	public static String unidadEnTexto(int iNumero){
+
  switch(iNumero){
 	case 1:
 		return "uno";
@@ -120,18 +117,6 @@ public class Inciso8 {
 	default:
 		return "";
   }
-}
- public static String centenaEnTexto(int iCentena){
-  switch (iCentena){
-	case 1:
-		return "ciento";
-	case 5:
-		return "quinientos";
-	case 9:
-		return "novecientos";				
-	default:
-		return "";
-  }
-  //s.close();
+ 
 }
 }

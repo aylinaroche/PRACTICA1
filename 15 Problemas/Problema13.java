@@ -3,36 +3,34 @@ package pack;
 import java.util.*;
 
 public class Problema13 {
-//public void clase13(){
-	public static void main(String[] args) {
+public void clase13(){
+//	public static void main(String[] args) {
 		
-		int aol,aop;
+		int iletra,opcion;
 		char c;
 		char op;
 		Scanner s=new Scanner(System.in);
-		System.out.println("Ingrese una letra");
+		System.out.println("Ingrese una letra:");
 		c=s.next().charAt(0);
-		aol=(int)c;
+		iletra=(int)c;
 		do{
 		System.out.println("Adivine la letra: ");
 		op=s.next().charAt(0);
-		aop=(int)op;
-		verificar(aop,aol);
-		}while(aol!=aop);
+		opcion=(int)op;
+		verificar(opcion,iletra);
+		}while(iletra!=opcion);
 		
 		s.close();
 
 	}
 
-	private static void verificar(int aop, int aol) {
-		if(aop==aol){
-			System.out.println("Felicidades encontro la letra");
-		}else if(aop<aol){
-			System.out.println("La letra que ingreso esta antes de la que busca");
-		}else if(aop>aol){
-			System.out.println("La letra que ingreso esta despues de la que busca");
+	public static void verificar(int opcion, int iletra) {
+		if(opcion==iletra){
+			System.out.println("¡FELICIDADES! Encontró la letra");
+		}else if(opcion<iletra){
+			System.out.println("La letra que busca esta DESPUÉS");
+		}else if(opcion>iletra){
+			System.out.println("La letra que busca esta ANTES");
 		}
-		
-	}
-
+		}
 }

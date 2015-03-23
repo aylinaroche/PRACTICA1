@@ -2,14 +2,14 @@ package pack;
 import java.util.Scanner;
 
 public class Problema14 {
-// plubic void clase14(){
-	public static void main(String[] args) {
+public void clase14(){
+//	public static void main(String[] args) {
   
 		int i, j, k, num;
 		Scanner s = new Scanner(System.in);
 		System.out.println("Ingrese un número del 1 al 10");
 		num = s.nextInt();
-	if(num<11){			
+	if(num<100){			
 		for(i=0;i<num;i++){
 			System.out.print("* ");
 					}
@@ -29,7 +29,7 @@ public class Problema14 {
         }}
 	else{
 		
-		System.out.println("El numero ingresado no esta en el rango");
+		System.out.println("El número ingresado no esta en el rango");
 	}
 	s.close();
 	}

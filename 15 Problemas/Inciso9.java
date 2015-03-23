@@ -3,14 +3,15 @@ package pack;
 import java.util.Scanner;
 
 public class Inciso9 {
-//	public  void clase9() {
-	public static void main(String[] args) {
+public  void clase9() {
+	//public static void main(String[] args) {
 			
 		int num, cent, dec, uni, a, b, c, d;
 		Scanner s = new Scanner(System.in);
-		System.out.println("Ingrese un numero arabigo");
+		System.out.println("Ingrese un numero Arábigo");
 		
 		num = s.nextInt();
+	if(num<1000){
 		
 		cent = num/100;
 		a = cent*100;
@@ -21,7 +22,7 @@ public class Inciso9 {
 		d = b-c;
 		
 		uni =d/1;
-		System.out.println("El número ingreso en romano es:");
+		System.out.println("El número que ingresó en Romano es:");
 		
 switch(cent){
       
@@ -154,6 +155,13 @@ case 10:{
 	System.out.print("X");
 	break;
 }
+
 }
 s.close();
+} 
+	else{
+		System.out.println("Ingrese un número menor a 1000");
+		}
 	}}
+
+	

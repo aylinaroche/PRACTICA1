@@ -4,12 +4,12 @@ import java.util.StringTokenizer;
 
 public class Inciso5 {
 
-//	public void clase5() {
-	public static void main(String[] args) {
+public void clase5() {
+//	public static void main(String[] args) {
 		
 		Scanner s = new Scanner(System.in);
 
-	System.out.println("Ingrese primer fecha con este formato _/_/_");
+	System.out.println("Ingrese la primer fecha con este formato _/_/_");
 	String i = s.next();
 
 	StringTokenizer tokens = new StringTokenizer(i,"/");
@@ -23,12 +23,10 @@ public class Inciso5 {
 	int Dia1=Fecha1[0];
 	int Mes1=Fecha1[1];
 	int Año1=Fecha1[2];
-
 	
 	/////////////////////////////////////////
-	
-	
-	System.out.println("Ingrese segunda fecha con este formato _/_/_");
+		
+	System.out.println("Ingrese la segunda fecha con este formato _/_/_");
 	String k = s.next();
 
 	StringTokenizer token = new StringTokenizer(k,"/");
@@ -46,7 +44,7 @@ if(Dia2<31 && Dia1<31 && Mes2<13 && Mes1<13){
 	
 	int numeroDias = ((Año2-Año1)*360+(Mes2-Mes1)*30+(Dia2-Dia1));
 	
-	System.out.println("El número de días es  " + numeroDias + "dias");
+	System.out.println("El número de diferencia de días es  " + numeroDias);
 }
 else{
 	System.out.println("Ingrese fechas validas");

@@ -2,8 +2,8 @@ package pack;
 
 public class Inciso1 {
 
-//		public void Clase1 () {
-	public static void main(String[] args) {
+		public void Clase1 () {
+//	public static void main(String[] args) {
 		
 		//PARTE SUPERIOR		
 		int a, b, c, d;

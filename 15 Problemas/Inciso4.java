@@ -2,8 +2,10 @@ package pack;
 import java.util.*;
 public class Inciso4 {
 
-//	public void clase4() {
-	public static void main(String[] args) {
+//
+	
+	public void clase4() {
+	//public static void main(String[] args) {
 		
 		 String a ;	
 			float X;
@@ -18,7 +20,7 @@ public class Inciso4 {
 			X = s.nextFloat();
 			 
 			 if(a.compareTo("C")==0){
-			    op='C';
+				 op='C';
 			 }else if(a.compareTo("U")==0){
 		            op='U'; 
 			 }else if(a.compareTo("T")==0){

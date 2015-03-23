@@ -3,8 +3,8 @@ import java.util.Scanner;
 
 public class Inciso6 {
 
-	//public void clase6(){
-	public static void main(String[] args) {
+	public void clase6(){
+	//public static void main(String[] args) {
 		
 		double a, b;      
 		System.out.println("Ingrese dos números");
@@ -49,12 +49,12 @@ case 'r': {
 }
 case 'm': {
 	double multi = (a*b);
-	System.out.println("La multiplicacion es " + multi);
+	System.out.println("La multiplicación es " + multi);
 		break;
 }
 case 'd': {
 	double div = (a/b);
-	System.out.println("La division es " + div);
+	System.out.println("La división es " + div);
 		break;
 }	
 }

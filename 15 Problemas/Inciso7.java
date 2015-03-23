@@ -3,8 +3,8 @@ import java.util.Scanner;
 
 public class Inciso7 {
 
-//	public void clase7() {
-	public static void main(String[] args) {
+	public void clase7() {
+//	public static void main(String[] args) {
 		
 		int a, i;
 		

@@ -5,10 +5,13 @@ import java.util.Scanner;
 public class Menu {
 
 	public static void main(String[] args) {
-		
-		
 		Scanner s = new Scanner(System.in);
-		
+		int hacer = 0;
+		 
+do{
+	
+		System.out.println("_______________________________________________ ");
+		System.out.println();
 System.out.println("PROBLEMAS DEL NIVEL 1");		
 System.out.println("1. Problema 1");
 System.out.println("2. Problema 2");
@@ -29,8 +32,11 @@ System.out.println("15. Problema 14");
 System.out.println();	
 System.out.println("Escriba el numero del problema; ");
    
-              int opcion;
-              opcion = s.nextInt();
+int opcion=0;
+opcion = s.nextInt();
+
+System.out.println("_______________________________________________ ");
+System.out.println();
 
 switch(opcion){
 
@@ -85,6 +91,7 @@ case 10:{
 	opcion10.clase10();
 	break;
 }
+
 case 11:{
 	Problema11 opcion11 = new Problema11();
 	opcion11.clase11();
@@ -92,17 +99,17 @@ case 11:{
 }
 case 12:{
 	Problema12 opcion12 = new Problema12();
-	opcion12.clase11();
+	opcion12.clase12();
 	break;	
 }
 case 13:{
 	Problema13 opcion13 = new Problema13();
-	opcion13.clase12();
+	opcion13.clase13();
 	break;	
 }
 case 14:{
 	Problema14 opcion14 = new Problema14();
-	opcion14.clase11();
+	opcion14.clase14();
 	break;	
 }
 case 15:{
@@ -113,6 +120,10 @@ case 15:{
 
 	
 }
+hacer++;
+} 
+
+while(hacer<16);
 
 
 
